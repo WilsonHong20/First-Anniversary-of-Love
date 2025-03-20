@@ -12,12 +12,12 @@
 #txt1 {
 	font-size: 16px;
 	text-align: center;
-	color: white;
+	color: rgb(214, 126, 126);
 }
 #txt2 {
 	font-size: 16px;
 	text-align: center;
-	color: white;
+	color: rgb(211, 131, 131);
 }
 
 #content{
@@ -114,20 +114,32 @@
 }
 
 #img{
-	display: block;
-	left: 0;
-	right: 0;
-	margin: auto;
-	width: auto;
-	height: 100%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%); /* 居中 */
+	max-width: 100%; /* 限制宽度不超过容器 */
+	max-height: 100%; /* 限制高度不超过容器 */
+	object-fit: contain; /* 保持图片比例完整性，不裁剪 */
 }
 
-#Txt{
-	display: inline-block;
-	font-size: 17px;
-	width: 100%;
-	text-align: center;
-	color: white;
+#Txt {
+    position: absolute;
+    bottom: 10%; /* 文字显示在图片下方 */
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 28px; /* 增大字体大小 */
+    color: #a84979; /* 设置文字颜色为粉红色 */
+    font-family: 'Comic Sans MS', 'Chalkboard SE', cursive; /* 使用可爱的字体 */
+    text-align: center;
+    background-color: rgba(226, 212, 214, 0.7); /* 使用浅粉色半透明背景 */
+    padding: 12px 18px; /* 增加内边距 */
+    border-radius: 10px; /* 圆角边框，增加可爱感 */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* 添加阴影效果 */
+    z-index: 10; /* 确保文字在图片上方 */
+    opacity: 1; /* 确保文字可见 */
+    letter-spacing: 1.5px; /* 增加字母间距 */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* 添加文字阴影 */
 }
 
 #tmp{
