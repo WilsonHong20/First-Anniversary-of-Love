@@ -128,7 +128,7 @@
     bottom: 10%; /* 文字显示在图片下方 */
     left: 50%;
     transform: translateX(-50%);
-    font-size: 28px; /* 增大字体大小 */
+    font-size: clamp(16px, 4vw, 28px); /* 增大字体大小 */
     color: #a84979; /* 设置文字颜色为粉红色 */
     font-family: 'Comic Sans MS', 'Chalkboard SE', cursive; /* 使用可爱的字体 */
     text-align: center;
