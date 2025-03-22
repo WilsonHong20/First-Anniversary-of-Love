@@ -1,6 +1,6 @@
 let i = 0;
 let text1 = "嘿! 亲爱的李小姐.";
-let text2 = "今天是你的生日！"
+let text2 = "生日快乐呀！！"
 let speed = 100;
 
 function typeWriter(text, para){
